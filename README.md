@@ -4,23 +4,19 @@
 <br><br>
 # How to read your Smart Meter data automatically?
 <br>
-Since I've got smart meter installed, I was looking for a way to automatically collect my meter data to track electricity usage (and solar export) with corresponding pricing as per current supplier rates.<br><br>
-While searching on internet I found this post https://www.boards.ie/discussion/2058292506/esb-smart-meter-data-script as potential candidate to start with.
-<br>
-Unfortunatelly linked script is broken - ESB have chnaged some URL's and file structure since then and I had to spend some time and tinker with code to make it working with new (as of writing it is 21-JUL-2023) URL structure.<br><br>
-End result - code is fixed and runs just fine now, I am able to read all smart meter readings from my account in JSON format and push it further to my InfluxDB and Home Assistant for analysis/reporting.
+Thanks to the work from badger707 I used the code and trying to configure a custom component for Home Assistant for easy integration for other users.
+Learning as I go....
 <br><br>
 # Requirements<br>
 * You need to create account with ESB here https://myaccount.esbnetworks.ie <br>
 * In your account, link your electricity meter MPRN
 <br><br>
 # Script setup<br>
-* In script - update MPRN, user and password at the bottom of the code
+* UI will pop up to input username, password, MPRN and scantime.
 
 <br><br>
-I hope this will be usefull, cheers!
+...
 <br><br>
 UPDATES: <br>
-* 09-May-2024 -- there was some changes on ESB side and this broke CSV parsing in script, fixed & tested, JSON output works as expected.
-
+* 07-June-2024 -- work in progress, got the script to run in Home Assistant but created a sensor for each value. Updated the code to try repair that. Now working on the config_flow for the integration to load via the UI.
 
