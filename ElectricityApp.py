@@ -112,11 +112,11 @@ def esb_data(user, password,download_dir):
 
     # Find the username field using XPath and enter the username
     username_field = driver.find_element(By.XPATH, '//*[@id="signInName"]')
-    username_field.send_keys('vitopiepoli@gmail.com')
+    username_field.send_keys(user)
 
     # Find the password field using XPath and enter the password
     password_field = driver.find_element(By.XPATH, '//*[@id="password"]')
-    password_field.send_keys('!$?NvtidHx4F74P')
+    password_field.send_keys(password)
 
     # Submit the form (assuming the form is submitted by pressing Enter in the password field)
     password_field.send_keys(Keys.RETURN)
@@ -162,8 +162,8 @@ def calculate_daily_cost(df, cost_per_kw, discount, vat, fixed_cost):
 # Streamlit application
 st.title("ESB Electricity Consumption and Cost Analysis")
 
-# User credentials and MPRN
-mpnr = "xxxxxxxxxxxxx"
+# User credentials
+
 user = "xxxxxxxxxxxxxx"
 password = "xxxxxxxxxxxxxxx"
 
