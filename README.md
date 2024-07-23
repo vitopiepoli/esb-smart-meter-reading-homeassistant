@@ -19,4 +19,5 @@ Learning as I go....
 <br><br>
 UPDATES: <br>
 * 07-June-2024 -- work in progress, got the script to run in Home Assistant but created a sensor for each value. Updated the code to try repair that. Now working on the config_flow for the integration to load via the UI.
+* 22-July-2024 -- Creating a streamlit application and overcoming issues with downloading date by accessing it using selenium for python. You need to pick your download directory.
 
