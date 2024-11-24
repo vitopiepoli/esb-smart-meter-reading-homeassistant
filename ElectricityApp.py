@@ -145,8 +145,6 @@ def esb_data(user, password,download_dir):
     # Close the browser
     driver.quit()
 
-user = "vitopiepoli@gmail.com"
-password = "!$?NvtidHx4F74P"
 
 
 start_date = datetime.today() - timedelta(days=30)
